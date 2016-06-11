@@ -25,7 +25,10 @@
 #include <termios.h>
 #include <assert.h>
 #include <stdlib.h>
+<<<<<<< HEAD
 #include <sys/ioctl.h>
+=======
+>>>>>>> e4b55965079c24a481cedd7413ddd4607da0957a
 #include "serial.h"
 #include "stm32.h"
 #include "memmap.h"

@@ -7,8 +7,11 @@
 #include <stdio.h>
 #include <termios.h>
 #include <unistd.h>
+<<<<<<< HEAD
 #include <sys/select.h>
 #include <sys/ioctl.h>
+=======
+>>>>>>> e4b55965079c24a481cedd7413ddd4607da0957a
 #include "term.h"
 #include "serial.h"
 #include "stm32.h"
@@ -35,7 +38,11 @@ int term(char* portName, int baud, int bootp, int reset, int isEcho, int isLine)
 	struct termios oldt;
 	struct termios newt;
 	char ch = 0;
+<<<<<<< HEAD
 	fd_set fdr;
+=======
+	struct fd_set fdr;
+>>>>>>> e4b55965079c24a481cedd7413ddd4607da0957a
 	int r;
 	fd = serialOpen(portName, baud, 8, 'N', 1);
 	if ( fd >0 ) {

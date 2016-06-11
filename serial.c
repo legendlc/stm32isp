@@ -164,8 +164,12 @@ int serialRead(int fd, unsigned char *buffer, int len)
 {
 	int ret = SER_OK;
 	int r;
+<<<<<<< HEAD
 	//struct 
 	fd_set fdr;
+=======
+	struct fd_set fdr;
+>>>>>>> e4b55965079c24a481cedd7413ddd4607da0957a
 	struct timeval timeout = {3,0};
 	int cnt = 0;
 
